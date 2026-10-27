@@ -1,0 +1,96 @@
+[INFO] Scanning for projects...
+[INFO] Loaded 24218 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] ----------------------< com.vflores:app-students >----------------------
+[INFO] Building appfrv-students 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.1.1:run (default-cli) > test-compile @ app-students >>>
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ app-students ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ app-students ---
+[INFO] Loaded 74 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ app-students ---
+[INFO] skip non existing resourceDirectory C:\Code\appfrv-students\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ app-students ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.1.1:run (default-cli) < test-compile @ app-students <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.1.1:run (default-cli) @ app-students ---
+[INFO] Loaded 50 auto-discovered prefixes for remote repository ow2-snapshot (prefixes-ow2-snapshot.txt)
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-10-24T00:59:47.014-06:00  INFO 18520 --- [appfrv-students] [           main] com.vflores.AppfrvStudentsApplication    : Starting AppfrvStudentsApplication using Java 25.0.4.1 with PID 18520 (C:\Code\appfrv-students\target\classes started by valen in C:\Code\appfrv-students)
+2026-10-24T00:59:47.016-06:00  INFO 18520 --- [appfrv-students] [           main] com.vflores.AppfrvStudentsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-10-24T00:59:47.636-06:00  INFO 18520 --- [appfrv-students] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-24T00:59:47.743-06:00  INFO 18520 --- [appfrv-students] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 5 JPA repository interfaces.
+2026-10-24T00:59:48.430-06:00  INFO 18520 --- [appfrv-students] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-24T00:59:48.443-06:00  INFO 18520 --- [appfrv-students] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-24T00:59:48.444-06:00  INFO 18520 --- [appfrv-students] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-24T00:59:48.486-06:00  INFO 18520 --- [appfrv-students] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1430 ms
+2026-10-24T00:59:48.661-06:00  INFO 18520 --- [appfrv-students] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-24T00:59:48.720-06:00  INFO 18520 --- [appfrv-students] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-24T00:59:49.147-06:00  INFO 18520 --- [appfrv-students] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-24T00:59:49.184-06:00  INFO 18520 --- [appfrv-students] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-24T00:59:49.340-06:00  INFO 18520 --- [appfrv-students] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c7d8a4
+2026-10-24T00:59:49.341-06:00  INFO 18520 --- [appfrv-students] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-24T00:59:49.369-06:00  WARN 18520 --- [appfrv-students] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-24T00:59:49.391-06:00  INFO 18520 --- [appfrv-students] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/db_students_frv]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.6
+	Default catalog/schema: db_students_frv/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-24T00:59:50.225-06:00  INFO 18520 --- [appfrv-students] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-24T00:59:50.301-06:00  INFO 18520 --- [appfrv-students] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-24T00:59:50.380-06:00  INFO 18520 --- [appfrv-students] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.modelmapper.internal.typetools.TypeResolver (file:/C:/Users/valen/.m2/repository/org/modelmapper/modelmapper/3.2.6/modelmapper-3.2.6.jar)
+WARNING: Please consider reporting this to the maintainers of class org.modelmapper.internal.typetools.TypeResolver
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+2026-10-24T00:59:51.152-06:00  WARN 18520 --- [appfrv-students] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-24T00:59:51.454-06:00  INFO 18520 --- [appfrv-students] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-24T00:59:51.458-06:00  INFO 18520 --- [appfrv-students] [           main] com.vflores.AppfrvStudentsApplication    : Started AppfrvStudentsApplication in 4.846 seconds (process running for 5.135)
+2026-10-24T01:00:04.972-06:00  INFO 18520 --- [appfrv-students] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-24T01:00:04.972-06:00  INFO 18520 --- [appfrv-students] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-24T01:00:04.973-06:00  INFO 18520 --- [appfrv-students] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-24T01:00:05.332-06:00  WARN 18520 --- [appfrv-students] [nio-8080-exec-5] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23505
+2026-10-24T01:00:05.332-06:00  WARN 18520 --- [appfrv-students] [nio-8080-exec-5] org.hibernate.orm.jdbc.error             : ERROR: duplicate key value violates unique constraint "ukexsdtiia7iyi37tb56o6lgxy8"
+  Detail: Key (year, semester)=(2025, 1) already exists.
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:14 min
+[INFO] Finished at: 2026-10-24T01:00:57-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.1.1:run (default-cli) on project app-students: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
